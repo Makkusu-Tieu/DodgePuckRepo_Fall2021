@@ -420,6 +420,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 720907696, guid: 328d9b883996feb41b5432e4d76439ad, type: 3}
+      propertyPath: puckSpeed
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1537728174127610868, guid: 328d9b883996feb41b5432e4d76439ad, type: 3}
       propertyPath: m_RootOrder
       value: 4
