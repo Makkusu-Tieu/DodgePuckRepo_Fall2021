@@ -8,11 +8,14 @@ public class PlayerController : MonoBehaviour
     public float xRange;
     public float yRange;
     public GameObject Puck;
+    public GameObject Blocky;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Instantiate(Blocky, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
+
+        Instantiate(Puck, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
     }
 
     private void LateUpdate()
@@ -41,7 +44,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Instantiate(Puck, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
+        //Instantiate(Puck, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
+
+        GameObject[] puckArray;
+        puckArray = GameObject.FindGameObjectsWithTag("Puck");
+        Debug.Log("Puck Count: " + puckArray.Length);
 
         float moveHorizontal = (Input.GetAxis("Horizontal"));
 
