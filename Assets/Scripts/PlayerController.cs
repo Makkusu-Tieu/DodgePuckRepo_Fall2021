@@ -58,4 +58,13 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(movement * speed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Blocky"))
+        {
+            Destroy(other.gameObject);
+            Debug.Log("Hit Blocky");
+        }
+    }
 }

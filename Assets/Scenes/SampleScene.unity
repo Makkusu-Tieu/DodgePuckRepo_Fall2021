@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 917592547}
   - component: {fileID: 917592546}
   - component: {fileID: 917592548}
+  - component: {fileID: 917592549}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -332,6 +333,22 @@ MonoBehaviour:
   yRange: 4.7
   Puck: {fileID: 1537728174127610874, guid: 328d9b883996feb41b5432e4d76439ad, type: 3}
   Blocky: {fileID: 5980818431342585267, guid: 8e02fb5ca3572064ba54fc887cd593f9, type: 3}
+--- !u!58 &917592549
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917592545}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.49999997
 --- !u!1001 &1011620299
 PrefabInstance:
   m_ObjectHideFlags: 0
